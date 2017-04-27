@@ -54,8 +54,6 @@ public class ModuleAdapter extends ArrayAdapter<Module> {
             iv.setImageResource(R.drawable.nonprog);
         }
 
-        if ()
-
         // Return the nicely done up View to the ListView
         return rowView;
     }
