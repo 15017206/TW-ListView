@@ -30,6 +30,9 @@ public class SecondActivity extends AppCompatActivity {
         Intent i = getIntent();
         String year = i.getStringExtra("year");
         tvYear.setText(year);
+        module.add(new Module("C208","Test" ,true));
+        module.add(new Module("C200","Test" ,false));
+        module.add(new Module("C346","Test" ,true));
 
         // arrayadapter - link with row2.xml, and the arraylist module
         aa = new ModuleAdapter(this, R.layout.row2, module);
