@@ -1,22 +1,29 @@
 package com.myapplicationdev.android.tw_listview;
 
 /**
- * Created by 15039840 on 27/4/2017.
+ * Created by 15017206 on 27/04/2017.
  */
 
 public class Module {
-    private String module;
-    private boolean prog;
+    private String tvYear;
+    private String moduleCode;
+    private boolean programming;
 
-    public Module(String module, boolean prog) {
-        this.module = module;
-        this.prog = prog;
+    public Module(String tvYear, String moduleCode, boolean programming){
+        this.tvYear = tvYear;
+        this.moduleCode = moduleCode;
+        this.programming = programming;
     }
-    public String getModule() {
-        return module;
+
+    public String getTvYear(){
+        return tvYear;
     }
-    public boolean isProg() {
-        return prog;
+
+    public String getModuleCode(){
+        return moduleCode;
+    }
+
+    public boolean isProgramming(){
+        return programming;
     }
 }
-
