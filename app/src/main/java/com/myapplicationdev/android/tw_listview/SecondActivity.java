@@ -22,9 +22,10 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-
         tvYear = (TextView) findViewById(R.id.tvYear);
         lv = (ListView) this.findViewById(R.id.lvModules);
+
+        module = new ArrayList<Module>();
 
         Intent i = getIntent();
         String year = i.getStringExtra("year");
